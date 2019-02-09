@@ -205,3 +205,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 add_executable(g4gekkouga_numbers src/g4gekkouga_numbers.cpp)
 target_link_libraries(g4gekkouga_numbers ${catkin_LIBRARIES})
 add_dependencies(g4gekkouga_numbers beginner_tutorials_generate_messages_cpp)
+
+add_executable(g4gekkouga_squares src/g4gekkouga_squares.cpp)
+target_link_libraries(g4gekkouga_squares ${catkin_LIBRARIES})
+add_dependencies(g4gekkouga_squares beginner_tutorials_generate_messages_cpp)

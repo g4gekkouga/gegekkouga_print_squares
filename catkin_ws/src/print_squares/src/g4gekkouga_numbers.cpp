@@ -20,9 +20,9 @@ int main(int argc, char **argv) {
 		std_msgs::Int64 msg;
 		msg.data = count;
 
-		ROS_INFO("%d", msg.data);
-
 		topic_Numbers.publish(msg);
+
+		ROS_INFO("Number Published %d", msg.data);
 
 		loop_rate.sleep();
 	}

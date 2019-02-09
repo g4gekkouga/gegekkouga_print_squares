@@ -483,6 +483,21 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+print_squares/CMakeFiles/g4gekkouga_squares.dir/rule:
+	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 print_squares/CMakeFiles/g4gekkouga_squares.dir/rule
+.PHONY : print_squares/CMakeFiles/g4gekkouga_squares.dir/rule
+
+# Convenience name for target.
+g4gekkouga_squares: print_squares/CMakeFiles/g4gekkouga_squares.dir/rule
+
+.PHONY : g4gekkouga_squares
+
+# fast build rule for target.
+g4gekkouga_squares/fast:
+	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f print_squares/CMakeFiles/g4gekkouga_squares.dir/build.make print_squares/CMakeFiles/g4gekkouga_squares.dir/build
+.PHONY : g4gekkouga_squares/fast
+
+# Convenience name for target.
 print_squares/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 print_squares/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : print_squares/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
@@ -614,6 +629,33 @@ src/g4gekkouga_numbers.cpp.s:
 	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f print_squares/CMakeFiles/g4gekkouga_numbers.dir/build.make print_squares/CMakeFiles/g4gekkouga_numbers.dir/src/g4gekkouga_numbers.cpp.s
 .PHONY : src/g4gekkouga_numbers.cpp.s
 
+src/g4gekkouga_squares.o: src/g4gekkouga_squares.cpp.o
+
+.PHONY : src/g4gekkouga_squares.o
+
+# target to build an object file
+src/g4gekkouga_squares.cpp.o:
+	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f print_squares/CMakeFiles/g4gekkouga_squares.dir/build.make print_squares/CMakeFiles/g4gekkouga_squares.dir/src/g4gekkouga_squares.cpp.o
+.PHONY : src/g4gekkouga_squares.cpp.o
+
+src/g4gekkouga_squares.i: src/g4gekkouga_squares.cpp.i
+
+.PHONY : src/g4gekkouga_squares.i
+
+# target to preprocess a source file
+src/g4gekkouga_squares.cpp.i:
+	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f print_squares/CMakeFiles/g4gekkouga_squares.dir/build.make print_squares/CMakeFiles/g4gekkouga_squares.dir/src/g4gekkouga_squares.cpp.i
+.PHONY : src/g4gekkouga_squares.cpp.i
+
+src/g4gekkouga_squares.s: src/g4gekkouga_squares.cpp.s
+
+.PHONY : src/g4gekkouga_squares.s
+
+# target to generate assembly for a file
+src/g4gekkouga_squares.cpp.s:
+	cd /home/amshumaan/gegekkouga_print_squares/catkin_ws/build && $(MAKE) -f print_squares/CMakeFiles/g4gekkouga_squares.dir/build.make print_squares/CMakeFiles/g4gekkouga_squares.dir/src/g4gekkouga_squares.cpp.s
+.PHONY : src/g4gekkouga_squares.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -648,6 +690,7 @@ help:
 	@echo "... roscpp_generate_messages_py"
 	@echo "... print_squares_generate_messages"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... g4gekkouga_squares"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
@@ -658,6 +701,9 @@ help:
 	@echo "... src/g4gekkouga_numbers.o"
 	@echo "... src/g4gekkouga_numbers.i"
 	@echo "... src/g4gekkouga_numbers.s"
+	@echo "... src/g4gekkouga_squares.o"
+	@echo "... src/g4gekkouga_squares.i"
+	@echo "... src/g4gekkouga_squares.s"
 .PHONY : help
 
 

@@ -558,6 +558,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named g4gekkouga_squares
+
+# Build rule for target.
+g4gekkouga_squares: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 g4gekkouga_squares
+.PHONY : g4gekkouga_squares
+
+# fast build rule for target.
+g4gekkouga_squares/fast:
+	$(MAKE) -f print_squares/CMakeFiles/g4gekkouga_squares.dir/build.make print_squares/CMakeFiles/g4gekkouga_squares.dir/build
+.PHONY : g4gekkouga_squares/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -691,6 +704,7 @@ help:
 	@echo "... roscpp_generate_messages_py"
 	@echo "... print_squares_generate_messages"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... g4gekkouga_squares"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
