@@ -428,6 +428,19 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named g4gekkouga_numbers
+
+# Build rule for target.
+g4gekkouga_numbers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 g4gekkouga_numbers
+.PHONY : g4gekkouga_numbers
+
+# fast build rule for target.
+g4gekkouga_numbers/fast:
+	$(MAKE) -f print_squares/CMakeFiles/g4gekkouga_numbers.dir/build.make print_squares/CMakeFiles/g4gekkouga_numbers.dir/build
+.PHONY : g4gekkouga_numbers/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -668,6 +681,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... print_squares_gencpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... g4gekkouga_numbers"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _print_squares_generate_messages_check_deps_Num"
 	@echo "... roscpp_generate_messages_cpp"

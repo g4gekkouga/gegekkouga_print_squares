@@ -106,7 +106,7 @@ catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES print_squares
 #  CATKIN_DEPENDS roscpp rospy std_msgs
-   CATKIN_DEPENDS message_runtime
+#  CATKIN_DEPENDS message_runtime
 #  DEPENDS system_lib
 )
 
@@ -198,3 +198,10 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+## Build numbers
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(g4gekkouga_numbers src/g4gekkouga_numbers.cpp)
+target_link_libraries(g4gekkouga_numbers ${catkin_LIBRARIES})
+add_dependencies(g4gekkouga_numbers beginner_tutorials_generate_messages_cpp)
