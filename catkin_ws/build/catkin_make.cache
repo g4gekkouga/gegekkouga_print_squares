@@ -1,2 +1,2 @@
-
+print_squares
 -DCATKIN_DEVEL_PREFIX=/home/amshumaan/gegekkouga_print_squares/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/amshumaan/gegekkouga_print_squares/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/amshumaan/gegekkouga_print_squares/catkin_ws/install
+
+Name: print_squares
+Description: Description of print_squares
+Version: 0.1.0
+Cflags: -I/home/amshumaan/gegekkouga_print_squares/catkin_ws/install/include
+Libs: -L/home/amshumaan/gegekkouga_print_squares/catkin_ws/install/lib 
+Requires: message_runtime
