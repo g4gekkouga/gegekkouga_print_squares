@@ -199,7 +199,7 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-## Build numbers
+## Build numbers and squares
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(g4gekkouga_numbers src/g4gekkouga_numbers.cpp)
@@ -209,3 +209,7 @@ add_dependencies(g4gekkouga_numbers beginner_tutorials_generate_messages_cpp)
 add_executable(g4gekkouga_squares src/g4gekkouga_squares.cpp)
 target_link_libraries(g4gekkouga_squares ${catkin_LIBRARIES})
 add_dependencies(g4gekkouga_squares beginner_tutorials_generate_messages_cpp)
+
+add_executable(g4gekkouga_print src/g4gekkouga_print.cpp)
+target_link_libraries(g4gekkouga_print ${catkin_LIBRARIES})
+add_dependencies(g4gekkouga_print beginner_tutorials_generate_messages_cpp)
